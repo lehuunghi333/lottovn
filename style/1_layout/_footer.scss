@@ -1,0 +1,170 @@
+.footer {
+    background-color: $bg-allpage;
+    padding: 50px 0 0;
+  
+    /* footer link
+    -------------------------*/
+    &__link {
+        display: flex;
+        justify-content: center;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+  
+    /* footer logo
+    -------------------------*/
+    &__logo {
+        text-align: center;
+        padding-top: 30px;
+        width: 40%;
+        .img {
+            width: 180px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: .85rem;
+            line-height: 1.65;
+            color: $cl-default;
+            span {
+                color: $cl-layout;
+            }
+        }
+    }
+  
+    /* footer category, quicklink, touch
+    -----------------------------------*/
+    &__category, &__quicklink, &__touch {
+        width: 20%;
+    }
+  
+    /* touch category
+    -------------------------*/
+    &__touch {
+      text-align: center;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 150px;
+            margin: 0 auto;
+            justify-content: center;
+            li {
+                width: 30%;
+                margin: 4% 1%;
+                text-align: center;
+            }
+            a {
+                background-color: #3a5999;
+                width: 30px;
+                height: 30px;
+                display: block;
+                line-height: 30px;
+                margin: 0 auto;
+                border-radius: 50%;
+                color: $cl-default;
+                font-size: 1rem;
+                &.ins {
+                    background: radial-gradient(circle farthest-corner at 32%,at 106%,#ffe17d 0,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%),linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
+                    background: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%),linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
+                }
+                &.twi {
+                    background-color: #00b6f1;
+                }
+                &.ybe {
+                    background-color: red;
+                }
+                &.eve {
+                    background-color: #414141;
+                }
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+  
+    /* quicklink category
+    -------------------------*/
+    &__category, &__quicklink {
+        a {
+            color: $body-color-text;
+            font-size: 1rem;
+            line-height: 1.65;
+        }
+    }
+  
+    /* slider providers
+    -------------------------*/
+    &__slide {
+        max-width: 1160px;
+        margin: 0 auto;
+        img.img-providers {
+            width: 100%;
+        }
+        h2 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $cl-default;
+            padding: 50px 0 30px;
+        }
+        .slideProviders {
+            text-align: center;
+            margin: 0 10px;
+        }
+    }
+  
+    /* banks
+    -------------------------*/
+    &__banks {
+        background-color: $body-color-bg;
+    }
+  
+    /* payment
+    -------------------------*/
+    &__payment {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px auto 20px;
+        max-width: 1600px;
+        padding: 30px 0;
+        .bankFt, .appFt {
+            display: flex;
+            align-items: flex-end;
+            li {
+                margin-right: 20px;
+            img {
+                width: 100px;
+            }
+        }
+    }
+    .appFt li {
+            img {
+                width: 200px;
+            }
+        }
+    }
+  
+    /* bank
+    -------------------------*/
+    &__bank {
+        h3 {
+            font-size: 1.1rem;
+            text-align: center;
+            color: $cl-default;
+            margin-bottom: 20px;
+        }
+    }
+}
+.c-title1 {
+    font-size: 1.3rem;
+    color: $cl-default;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.copyright {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 20px;
+}

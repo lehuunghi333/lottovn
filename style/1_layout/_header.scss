@@ -1,0 +1,147 @@
+/* Header page
+---------------------------------------------------------*/
+.c-header {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  
+    /* Title logo
+    -------------------------*/
+    &__title {
+        width: 230px;
+        padding-top: 5px;
+        img {
+            width: 100%;
+        }
+    }
+  
+    /* Login page
+    -------------------------*/
+    &__login {
+        display: flex;
+        justify-content: center;
+        }
+        .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+  
+    /* Check forgot password
+    -------------------------*/
+    &__checkbox {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 12px;
+        padding-top: 10px;
+        cursor: pointer;
+        font-size: .85rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        text-align: right;
+        &:hover {
+            color: $cl-layout;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        .checkmark {
+            position: absolute;
+            top: 10px;
+            right: 128px;
+            height: 15px;
+            width: 15px;
+            background-color: $cl-default;
+            border-radius: 2px;
+            &:after {
+            left: 6px;
+            top: 2px;
+            width: 5px;
+            height: 10px;
+            border: solid $cl-layout;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            }
+        }
+        input:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+  
+    /* Check forgot password
+    -------------------------*/
+    &__user {
+        width: 250px;
+        border-bottom: 1px solid $body-color-text;
+        margin-left: 10px;
+        position: relative;
+        height: 30px;
+        &:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            left: 50%;
+            height: 1px;
+            background-color: $cl-layout;
+            bottom: 0;
+            transition: 0.1s all ease-in;
+        }
+        &:hover:after {
+            left: 0;
+            width: 100%;
+            transition: 0.1s all ease-in;
+        }
+        &-input {
+                background-color: transparent;
+                border: 0;
+                color: $cl-default;
+                height: 100%;
+                font-size: 1rem;
+        }
+        &-pw {
+            padding-top: 10px;
+            text-align: right;
+        a {
+            color: $body-color-text;
+            &:hover {
+                    color: $cl-layout;
+                }
+            }
+        }
+    }
+  
+    /* Join page
+    -------------------------*/
+    &__submit {
+      .btn-submit {
+            background-color:transparent;
+            box-shadow: inset 0 0 0 1px $cl-layout;
+            border: 0;
+            border-radius: 5px;
+            color: $cl-default;
+            padding: 10px 15px;
+            margin-left: 20px;
+            font-size: 1rem;
+        &:hover {
+            background-color:$cl-layout;
+        }
+        &.join {
+            background-color: $cl-layout;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}

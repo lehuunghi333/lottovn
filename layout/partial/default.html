@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>{{title}}</title>
+      <meta name="description" content="{{description}}">
+      <meta name="keywords" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link inline rel="stylesheet" type="text/css" href="/css/style.css">
+      <link rel="stylesheet" type="text/css" href="/js/slick/slick.css"/>
+      <script src="/js/jquery-1.12.4.min.js"></script>
+    
+  </head>
+  <body data-function="{{function}}">
+
+        {{#block "header"}}
+        {{> header}}
+        {{/block}}
+
+        {{#block "main"}}
+        {{{contents}}}
+        {{/block}}
+
+        {{#block "footer"}}
+        {{> footer}}
+        {{/block}}
+
+  </body>
+</html>
